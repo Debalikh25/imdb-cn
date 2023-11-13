@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Movie App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="favourites.html">Favourites</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div id="search-box">
+            <form id="search-form">
+
+
+                <div class="form-group">
+
+                    <input type="text" autocomplete="off" placeholder="Search a movie" class="form-control"
+                        id="movie-name" name="movie" required />
+
+                    <div id="search-result">
+                        <p title="close" id="close-sign">X</p>
+                        <div id="search-result-movie">
+
+                        </div>
+                    </div>
+
+                    <input type="submit" class="btn btn-success mt-3" value="Search" />
+                </div>
+            </form>
+        </div>
+
+        <hr>
+
+
+
+        <div id="result" class="mt-4">
+
+        </div>
+
+    </div>
+
+</body>
+<script src="script1.js"></script>
+
+
+</html>
